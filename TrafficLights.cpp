@@ -1,5 +1,6 @@
 int mainLength = 4000;
 int transitionLength = 2000;
+int animationLength = 250;
 
 void setup() {
   pinMode(3, OUTPUT);
@@ -14,19 +15,19 @@ void loop() {
     digitalWrite(4, LOW);
     digitalWrite(5, LOW);
 
-    delay(250);
+    delay(animationLength);
 
     digitalWrite(3, LOW);
     digitalWrite(4, HIGH);
     digitalWrite(5, LOW);   
 
-    delay(250);
+    delay(animationLength);
 
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
     digitalWrite(5, HIGH);
 
-    delay(250);
+    delay(animationLength);
   }
 
   while (digitalRead(2) == LOW) {
